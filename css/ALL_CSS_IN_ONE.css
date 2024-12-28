@@ -1,0 +1,128 @@
+
+/* HAMMASIGA BITA QILIB STYLE */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.text-blue {
+    color: deepskyblue;
+}
+
+/* CONTAINER QISMI */
+.container {
+    box-shadow: 0px 0px 7px rgb(0, 0, 0, 0.4);
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px 10px;
+}
+
+/* MENU QISMI */
+nav {
+    text-align: center;
+}
+/* LOGOTIP */
+.logo {
+    font-size: 40px;
+}
+
+/* SECTION QISMI */
+
+/* IMOROT NOMI */
+section .section-build-name {
+    text-align: center;
+}
+/* BIR QANCHA JOYGA BIR XIL STYLE */
+.section-build-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+}
+/* SECTION ICHIDAGI BARCHA H4 BIRXIL STYLE */
+section h4 {
+    width: 40%;
+}
+
+/* SECTION ICHIDAGI BARCHA H2 BIRXIL STYLE */
+section h2 {
+    width: 50%;
+}
+
+/* RASIMLAR JOYLASHUVI */
+.section-imgs{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+
+.five h2 {
+    width: 90%;
+}
+/* IMORATNI COLUM SHAKILDA STYLE */
+.build-info-colum {
+    flex-direction: column;
+    padding: 0px 20px;
+}
+
+/* IMORATNI COLUM ICHIDAGI BARCHA H4 BIRXIL STYLE */
+
+.build-info-colum h4 {
+    width: 100%;
+}
+/* IMORATNI COLUM ICHIDAGI BARCHA H2 BIRXIL STYLE */
+.build-info-colum h2 {
+    width: 100%;
+}
+
+footer p {
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    section h2 {
+        font-size: 18px
+    }
+}
+
+@media (max-width: 769px) {
+    section h4 {
+        width: 100%;
+    }
+    
+    section h2 {
+        width: 100%;
+        font-size: 20px
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 95%;
+        margin: 0px auto;
+    }
+    section h4 {
+        width: 100%;
+    }
+    
+    section h2 {
+        width: 100%;
+        font-size: 18px;
+    }
+}
+@media (max-width: 370px) {
+    section h4 {
+        width: 100%;
+        font-size: 14px;
+    }
+    
+    section h2 {
+        width: 100%;
+        font-size: 16px;
+    }
+}
