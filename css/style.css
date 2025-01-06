@@ -9,7 +9,7 @@
 /* MENU QISMI */
 nav {
     background-color: whitesmoke;
-    
+
     padding: 5px 40px;
     box-shadow: 0px 0px 3px rgb(0, 0, 0, 0.4);
     position: fixed;
@@ -26,6 +26,7 @@ nav {
     align-items: center;
     flex-wrap: wrap;
 }
+
 /* LOGIN button */
 .nav-login-button {
     background-color: deepskyblue;
@@ -75,24 +76,23 @@ nav {
 }
 
 .nav-search-button:hover {
-    padding: 9px 10px;
-    color: deepskyblue;
+    scale: 1.1;
     box-shadow: 0px 0px 3px rgb(6, 159, 255);
 }
 
 /* MENU */
 .menu {
     display: flex;
-    align-items: center;
     background-color: white;
     padding: 20px;
     margin-top: 9px;
     border-radius: 6px;
     gap: 20px;
     flex-wrap: wrap;
-    display: none;
+    align-items: center;
     overflow-y: scroll;
     z-index: 998;
+    display: none;
     height: 60vh;
     scrollbar-width: none;
 }
@@ -110,6 +110,20 @@ nav {
     transform: translateY(-3px);
     text-decoration: underline;
 }
+
+.settings {
+    display: flex;
+    gap: 10px;
+}
+
+.settings select {
+    border: none;
+    border-radius: 6px;
+    background-color: deepskyblue;
+    color: white;
+    box-shadow: 0px 0px 3px rgb(6, 159, 255);
+}
+
 
 /* HEADER QISMI */
 header {
@@ -158,6 +172,12 @@ header {
     padding: 7px 9px;
     border-radius: 6px;
     backdrop-filter: blur(5px) brightness(0.7);
+    transition: background-image 0.5s ease-in-out;
+}
+
+.header-buttons a:hover {
+    background-color: rgba(255, 255, 255, 0.331);
+    padding: 9px 11px;
 }
 
 
@@ -174,6 +194,11 @@ header {
     display: flex;
     align-items: center;
     flex-wrap: wrap-reverse;
+    font-family: sans-serif;
+}
+
+.info-about {
+    font-family: sans-serif;
 }
 
 .section1 h1 {
@@ -205,6 +230,7 @@ header {
     padding: 70px 0px;
     border-top: 2px solid deepskyblue;
 }
+
 .info2 {
     display: flex;
     flex-wrap: wrap;
@@ -221,7 +247,54 @@ header {
     width: 40%;
     line-height: 25px;
     font-size: 20px;
+    font-family: sans-serif;
 }
+
+.boxs {
+    display: flex;
+    padding: 80px 0px;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 23%;
+    border-radius: 6px;
+    box-shadow: 0px 0px 7px rgb(0, 0, 0, 0.6);
+    overflow-y: scroll;
+    scrollbar-width: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.box:hover {
+    margin-top: -20px;
+}
+
+.box-text {
+    padding: 10px;
+}
+
+.box-text h1 {
+    color: deepskyblue;
+    text-align: center;
+    background-color: #99999915;
+    border: 20px;
+}
+
+.box-info {
+    margin-top: 10px;
+}
+.date {
+    color: rgb(11, 241, 11);
+}
+.box img {
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    object-fit: cover;
+}
+
 /* ASIDE QISMI */
 aside {
     padding: 70px 0px;
@@ -234,8 +307,9 @@ aside h1 {
 
 .aside-text {
     margin: auto;
-    width: 80%;
+    width: 90%;
     line-height: 25px;
+    font-family: sans-serif;
     font-size: 20px;
 }
 
@@ -247,6 +321,20 @@ aside h1 {
     text-align: center;
 }
 
+.part {
+    line-height: 35px;
+}
+
+p a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+
+p a:hover {
+    text-decoration: underline;
+    color: #777;
+}
 
 /* FOOTER QISMI */
 footer {
@@ -280,95 +368,151 @@ footer a:hover {
     text-align: center;
     background-color: whitesmoke;
 }
- 
+
+.social {
+    text-align: center;
+}
+
+.social i {
+    margin: 5px;
+    font-size: 20px;
+}
+
+.telegram {
+    color: deepskyblue;
+}
+
+.instagram {
+    color: red;
+}
+
+.facebook {
+    color: rgb(0, 60, 255);
+}
+@media (max-width: 1024px) {
+    .box {
+        width: 45%;
+    }
+}
+
 @media (max-width: 769px) {
+    .nav-search-input {
+        width: 80%;
+    }
+
+    .boxs {
+        gap: 40px;
+    }
+    .box {
+        width: 70%;
+    }
+
     .info {
         gap: 20px;
     }
-   .info-img {
-    width: 100%;
-   } 
 
-   .info-about {
-    width: 90%;
-    margin: auto;
-   }
-   .info2 {
-    gap: 40px;
-}
-   .info-img2 {
-    width: 100%;
-   } 
+    .info-img {
+        width: 100%;
+    }
 
-   .info-about2 {
-    width: 90%;
-    margin: auto;
-   }
+    .info-about {
+        width: 90%;
+        margin: auto;
+    }
+
+    .info2 {
+        gap: 40px;
+    }
+
+    .info-img2 {
+        width: 100%;
+    }
+
+    .info-about2 {
+        width: 90%;
+        margin: auto;
+    }
 }
 
 @media (max-width: 520px) {
-   .nav-search-input {
-    width: 80%;
-   }
+    .box {
+        width: 80%;
+    }
+    nav {
+        padding: 5px 10px;
+    }
 
-   .menu a {
-    font-size: 14px;
-   }
+    .menu a {
+        font-size: 14px;
+    }
 
-   .header-bosh-yozuv {
-    font-size: 24px;
-   }
+    .header-bosh-yozuv {
+        font-size: 24px;
+    }
 
-   .info-about {
-    font-size: 14px;
-   }
-   .info-about2 {
-    font-size: 14px;
-   }
+    .info-about {
+        font-size: 14px;
+    }
 
-   .aside-text {
-    font-size: 14px;
-   }
+    .info-about2 {
+        font-size: 14px;
+    }
+
+    .aside-text {
+        font-size: 14px;
+    }
+
+    footer {
+        gap: 20px;
+    }
+
+    .social {
+        width: 100%;
+    }
 }
 
 @media (max-width: 400px) {
-    
+    .box {
+        width: 90%;
+    }
     footer {
         flex-direction: column;
         gap: 20px;
     }
 
     footer ul {
-    margin-left: -140px;
-    width: 40%;
+        margin-left: -140px;
+        width: 40%;
     }
 
     .nav-login-button {
         font-size: 14px;
     }
+
     .nav-search-button {
         font-size: 14px;
     }
 }
 
 @media screen and (max-width: 1300px) and (max-height: 360px) {
-    
-   .menu a {
-    font-size: 14px;
-   }
 
-   .header-bosh-yozuv {
-    font-size: 24px;
-   }
+    .menu a {
+        font-size: 14px;
+    }
 
-   .info-about {
-    font-size: 14px;
-   }
-   .info-about2 {
-    font-size: 14px;
-   }
+    .header-bosh-yozuv {
+        font-size: 24px;
+    }
 
-   .aside-text {
-    font-size: 14px;
-   }
+    .info-about {
+        font-size: 14px;
+    }
+
+    .info-about2 {
+        font-size: 14px;
+    }
+
+    .aside-text {
+        font-size: 14px;
+    }
 }

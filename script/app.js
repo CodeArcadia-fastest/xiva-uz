@@ -26,35 +26,41 @@ function changeBackgroundImage() {
 setInterval(changeBackgroundImage, 5000);
 
 // algaritm
-let isSearchActive = false;
+let isSearchActive = true;
 
 // funksiya
 function toggleSearch() {
     const searchInput = document.querySelector('.nav-search-input');
     const loginButton = document.querySelector('.nav-login-button');
+    const select = document.querySelector('select');
     const logo = document.querySelector('.nav-logo');
     const menu = document.querySelector('.menu');
     const button = document.querySelector('.nav-search-button');
 
     if (isSearchActive) {
         // qidiruvni yopish
-        searchInput.style.display = "none";
-        logo.style.display = "inline-block";
-        loginButton.style.display = "inline-block";
-        menu.style.display = "none";
-        button.innerHTML = '<i class="fa-solid fa-magnifying-glass"></i>';
-    } else {
-        // ochish
+
+        
+        select.style.display = "none";
         searchInput.style.display = "inline-block";
         logo.style.display = "none";
         loginButton.style.display = "none";
         menu.style.display = "flex";
         button.textContent = "X";
+    } else {
+        // ochish
+        searchInput.style.display = "none";
+        select.style.display = "inline-block";
+        logo.style.display = "inline-block";
+        loginButton.style.display = "inline-block";
+        menu.style.display = "none";
+        button.innerHTML = '<i class="fa-solid fa-magnifying-glass"></i>';
     }
 
     // Переключаем состояние
     isSearchActive = !isSearchActive;
 }
+
 
 // Обработчик события для кнопки поиска
 document.querySelector('.nav-search-button').addEventListener('click', toggleSearch);
