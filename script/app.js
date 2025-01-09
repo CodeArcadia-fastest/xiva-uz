@@ -67,3 +67,20 @@ document.querySelector('.nav-search-button').addEventListener('click', toggleSea
 
 // Инициализация начального фона
 changeBackgroundImage();
+
+document.addEventListener('DOMContentLoaded', function() {
+    const loadingElement = document.querySelector('.loading');
+    const body = document.body;
+    
+    // Блокируем прокрутку страницы
+    body.style.overflow = 'hidden';
+  
+    // Слушаем окончание анимации
+    loadingElement.addEventListener('animationend', function() {
+      loadingElement.classList.add('hidden'); // Добавляем класс для скрытия анимации
+      
+      // Восстанавливаем прокрутку страницы
+      body.style.overflow = ''; // Это убирает стиль и возвращает нормальную прокрутку
+    });
+  });
+  
