@@ -175,6 +175,7 @@ header {
     transition: background-image 0.5s ease-in-out;
 }
 
+
 .header-buttons a:hover {
     background-color: rgba(255, 255, 255, 0.331);
     padding: 9px 11px;
@@ -215,14 +216,44 @@ header {
 .info-img {
     width: 55%;
     height: auto;
+    animation: anime linear;
+    animation-delay: 1s;
+    animation-timeline: view();
+    animation-range: entry 20%;
 }
+@keyframes anime {
+    from{
+        opacity: 0;
+        transform: translateX(-200px);
+    }
 
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
 /* Info MALUMOTLARI */
 
 .info-about {
     width: 40%;
     font-size: 20px;
     line-height: 25px;
+    animation: animes linear;
+    animation-delay: 1s;
+    animation-timeline: view();
+    animation-range: entry 20%;
+}
+
+@keyframes animes {
+    from{
+        opacity: 0;
+        transform: translateX(200px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 
 /* SECTION2  */
@@ -241,6 +272,22 @@ header {
 .info-img2 {
     height: auto;
     width: 50%;
+    animation: animer linear;
+    animation-delay: 1s;
+    animation-timeline: view();
+    animation-range: entry 20%;
+}
+
+@keyframes animer {
+    from{
+        opacity: 0;
+        transform: translateX(200px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 
 .info-about2 {
@@ -248,6 +295,21 @@ header {
     line-height: 25px;
     font-size: 20px;
     font-family: sans-serif;
+    animation: animef linear;
+    animation-delay: 1s;
+    animation-timeline: view();
+    animation-range: entry 20%;
+}
+@keyframes animef {
+    from{
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 
 .boxs {
@@ -259,12 +321,28 @@ header {
 }
 
 .box {
-    width: 23%;
+    width: 22%;
     border-radius: 6px;
     box-shadow: 0px 0px 7px rgb(0, 0, 0, 0.6);
     overflow-y: scroll;
     scrollbar-width: none;
     transition: all 0.3s ease-in-out;
+    animation: apper linear;
+    animation-timeline: view();
+    animation-range: entry 10%;
+    animation-delay: 3s;
+}
+
+@keyframes apper {
+    from{
+        opacity: 0;
+        transform: translateX(-2000px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 
 .box:hover {
@@ -300,6 +378,23 @@ aside {
     padding: 70px 0px;
     border-top: 2px solid deepskyblue;
 }
+#toliq-malumotlar {
+    animation: animex linear;
+    animation-delay: 1s;
+    animation-timeline: view();
+    animation-range: entry 20%;
+}
+@keyframes animex {
+    from{
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
 
 aside h1 {
     text-align: center;
@@ -320,6 +415,8 @@ aside h1 {
 .aside-info {
     text-align: center;
 }
+
+
 
 .part {
     line-height: 35px;
