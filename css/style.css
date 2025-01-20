@@ -90,6 +90,7 @@ nav {
     background-color: whitesmoke;
     z-index: 997;
     overflow: hidden;
+    position: fixed;
 }
 
 .nav-menu {
@@ -571,6 +572,9 @@ footer a:hover {
     .box {
         width: 70%;
     }
+.menu a {
+    font-size: 10px;
+}
 
     .info {
         gap: 20px;
@@ -607,9 +611,6 @@ footer a:hover {
         padding: 5px 10px;
     }
 
-    .menu a {
-        font-size: 14px;
-    }
 
     .header-bosh-yozuv {
         font-size: 24px;
@@ -640,9 +641,15 @@ footer a:hover {
     .box {
         width: 90%;
     }
+
     footer {
         flex-direction: column;
         gap: 20px;
+    }
+
+    footer ul {
+        position: relative;
+        left: -15px;
     }
 
     footer ul {
